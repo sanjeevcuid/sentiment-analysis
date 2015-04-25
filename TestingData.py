@@ -71,7 +71,7 @@ def testNBClassifier(testData):
     classifier = extracted_data[0]
     words_count = extracted_data[1]
     testData_features = filterTweets(testData)
-    predict_label(classifier,testData_features,prior_probabilities,words_count)
+    #predict_label(classifier,testData_features,prior_probabilities,words_count)
     #print"After testing data","\n",extracted_data
     print "Accuracy is ", (float(accuracy)/len(testData))*100,"%"
     print "\n"
