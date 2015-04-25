@@ -72,10 +72,10 @@ if __name__=='__main__':
     testNBClassifier(test_data)
 
     print "IMDb data sets: \n"
-    train_data = extract_data_txt_file('C:/Users/schittia/Desktop/aclImdb/train')
+    train_data = extract_data_txt_file('Desktop/aclImdb/train') #path to train folder
     trainNBClassifier(train_data)
 
-    test_data = extract_data_txt_file('C:/Users/schittia/Desktop/aclImdb/test')
+    test_data = extract_data_txt_file('Desktop/aclImdb/test') #path to test folder
     testNBClassifier(test_data)
 
     _get_sentiment()
