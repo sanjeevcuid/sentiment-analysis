@@ -12,7 +12,7 @@ def filterTweet(text):
     return trainData
 
 def _get_sentiment():
-    input = raw_input("Enter your tweet:\n")
+    input = raw_input("Enter any phrase of your choice to know its sentiment:\n")
     with open('TRAIN_SETS.PICKLE', 'rb') as classifier_file:
         extracted_data = pickle.load(classifier_file)
         prior_probabilities = pickle.load(classifier_file)
