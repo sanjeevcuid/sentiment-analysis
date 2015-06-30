@@ -1,4 +1,4 @@
-# sentiment-analysis-using-Naive-Bayes  
+# sentiment-analysis-Python
 
   <b>Twitter datasets can be found here:</b> http://help.sentiment140.com/for-students   
   <b>IMDb datasets can be found here:</b> http://ai.stanford.edu/~amaas/data/sentiment/  
