@@ -1,19 +1,18 @@
 __author__ = 'Sanjeev K C'
 
-from collections import Counter
 import csv
 import re
 import string
 import os
 import cPickle as pickle
 
+from collections import Counter
 from nltk import probability
 from textblob import TextBlob
 from textblob_aptagger import PerceptronTagger
 
 #negate_sequence taken from "https://github.com/vivekn/sentiment/blob/master/info.py" and modified for my purpose
 #Thank you to vivek
-
 def negate_sequence(text):
     negation = False
     delimiters = "?.,!:;"
@@ -31,12 +30,14 @@ def negate_sequence(text):
     refined_text = " ".join(result)
     return refined_text
 
+'''
 def strip_nouns(text):
     blob = TextBlob(text, pos_tagger=PerceptronTagger())
     expr  = '|'.join(blob.noun_phrases)
     regex = re.compile(r'\b('+expr+r')\b', flags=re.IGNORECASE)
     txt = regex.sub("", text)
     return txt
+'''
 
 def extract_data_csv_file(file_name):
     MyValues = [] #create an empty list
